@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/GravitySimV1.1.dir/main.cpp.o -o GravitySimV1.1  /usr/lib/libsfml-graphics.so.2.6.1 /usr/lib/libsfml-window.so.2.6.1 /usr/lib/libsfml-system.so.2.6.1

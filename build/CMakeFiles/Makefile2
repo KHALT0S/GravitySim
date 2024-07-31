@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/Habib/programing/SFML_learn/GravitySimulator/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hello.dir/all
+all: CMakeFiles/GravitySimV1.0.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/hello.dir/clean
+clean: CMakeFiles/GravitySimV1.0.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hello.dir
+# Target rules for target CMakeFiles/GravitySimV1.0.dir
 
 # All Build rule for target.
-CMakeFiles/hello.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/Habib/programing/SFML_learn/GravitySimulator/build/CMakeFiles --progress-num=1,2 "Built target hello"
-.PHONY : CMakeFiles/hello.dir/all
+CMakeFiles/GravitySimV1.0.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GravitySimV1.0.dir/build.make CMakeFiles/GravitySimV1.0.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GravitySimV1.0.dir/build.make CMakeFiles/GravitySimV1.0.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/Habib/programing/SFML_learn/GravitySimulator/build/CMakeFiles --progress-num=1,2 "Built target GravitySimV1.0"
+.PHONY : CMakeFiles/GravitySimV1.0.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hello.dir/rule: cmake_check_build_system
+CMakeFiles/GravitySimV1.0.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/Habib/programing/SFML_learn/GravitySimulator/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GravitySimV1.0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/Habib/programing/SFML_learn/GravitySimulator/build/CMakeFiles 0
-.PHONY : CMakeFiles/hello.dir/rule
+.PHONY : CMakeFiles/GravitySimV1.0.dir/rule
 
 # Convenience name for target.
-hello: CMakeFiles/hello.dir/rule
-.PHONY : hello
+GravitySimV1.0: CMakeFiles/GravitySimV1.0.dir/rule
+.PHONY : GravitySimV1.0
 
 # clean rule for target.
-CMakeFiles/hello.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/clean
-.PHONY : CMakeFiles/hello.dir/clean
+CMakeFiles/GravitySimV1.0.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GravitySimV1.0.dir/build.make CMakeFiles/GravitySimV1.0.dir/clean
+.PHONY : CMakeFiles/GravitySimV1.0.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

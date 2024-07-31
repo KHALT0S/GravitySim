@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=hello
+CMAKE_PROJECT_NAME:STATIC=gravitySimV1.0
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -220,6 +220,15 @@ SFML_DIR:PATH=/usr/lib/cmake/SFML
 
 //Path to a file.
 SFML_DOC_DIR:PATH=/usr/share/doc/SFML
+
+//Value Computed by CMake
+gravitySimV1.0_BINARY_DIR:STATIC=/home/Habib/programing/SFML_learn/GravitySimulator/build
+
+//Value Computed by CMake
+gravitySimV1.0_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+gravitySimV1.0_SOURCE_DIR:STATIC=/home/Habib/programing/SFML_learn/GravitySimulator
 
 //Value Computed by CMake
 hello_BINARY_DIR:STATIC=/home/Habib/programing/SFML_learn/GravitySimulator/build

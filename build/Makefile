@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named GravitySimV1.0
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+GravitySimV1.0: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GravitySimV1.0
+.PHONY : GravitySimV1.0
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+GravitySimV1.0/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GravitySimV1.0.dir/build.make CMakeFiles/GravitySimV1.0.dir/build
+.PHONY : GravitySimV1.0/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GravitySimV1.0.dir/build.make CMakeFiles/GravitySimV1.0.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GravitySimV1.0.dir/build.make CMakeFiles/GravitySimV1.0.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GravitySimV1.0.dir/build.make CMakeFiles/GravitySimV1.0.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello"
+	@echo "... GravitySimV1.0"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

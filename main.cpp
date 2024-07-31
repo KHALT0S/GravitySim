@@ -4,8 +4,8 @@
 
 //using namespace std;
 
-const float G = 6.67430e-5; // Scaled gravitational constant for demonstration
-const float TIME_STEP = 0.001f; // Time step for the simulation
+const float G = 6.6743e-11; // Scaled gravitational constant for demonstration
+const float TIME_STEP = 0.5f; // Time step for the simulation
 
 struct CelestialBody {
     sf::Vector2f position;
@@ -18,6 +18,7 @@ struct CelestialBody {
 sf::Vector2f calculateGravitationalForce(const CelestialBody& body1, const CelestialBody& body2) {
     sf::Vector2f direction = body2.position - body1.position;
     float distance = std::sqrt(direction.x * direction.x + direction.y * direction.y);
+    if (distance == 0) return sf::Vector2f(0.f, 0.f);
     float forceMagnitude = (G * body1.mass * body2.mass) / (distance * distance);
     direction /= distance; // Normalize the direction vector
     return direction * forceMagnitude;
@@ -81,13 +82,18 @@ int main() {
         }
 
         // Calculate gravitational forces and update positions and velocities
-        for (auto& planet : planets) {
+        for (auto& planet1 : planets) {
             sf::Vector2f totalForce(0.f, 0.f);
             for (const auto& star : stars) {
-                totalForce += calculateGravitationalForce(planet, star);
+                totalForce += calculateGravitationalForce(planet1, star);
             }
-            planet.velocity += totalForce / planet.mass * TIME_STEP;
-            planet.position += planet.velocity * TIME_STEP;
+            for (const auto& planet2 : planets) {
+                if(&planet1 != &planet2){
+                    totalForce += calculateGravitationalForce(planet1, planet2);
+                }
+            }
+            planet1.velocity += totalForce / planet1.mass * TIME_STEP;
+            planet1.position += planet1.velocity * TIME_STEP;
         }
 
         for (auto& star1 : stars) {
